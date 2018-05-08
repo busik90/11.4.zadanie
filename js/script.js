@@ -21,6 +21,10 @@ Phone.prototype.showAllProperties = function() {
 	division('space');
 }
 
+Phone.prototype.addNewProperty = function(name, value) {
+	this[name] = value;
+}
+
 var iPhone6S = new Phone('iPhone6S', 2250, 'silver'),
 		SamsungGalaxyS6 = new Phone('Samsung Galaxy S6', 2300, 'white'),
 		OnePlusOne = new Phone('OnePlus One', 1949, 'black');
@@ -35,6 +39,8 @@ iPhone6S.showAllProperties();
 SamsungGalaxyS6.showAllProperties();
 OnePlusOne.showAllProperties();
 
+iPhone6S.addNewProperty('battery', '2800mAh');
+iPhone6S.showAllProperties();
 
 function division(type) {
 	switch(type) {
