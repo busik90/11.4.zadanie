@@ -11,3 +11,5 @@ Phone.prototype.printInfo = function() {
 var iPhone6S = new Phone('Apple', 2250, 'silver'),
 		Samsung Galaxy S6 = new Phone('Samsung Galaxy S6', 2300, 'white'),
 		OnePlus One = new Phone('OnePlus One', 1949, 'black');
+
+iPhone6S.printInfo();
